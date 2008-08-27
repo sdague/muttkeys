@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<overlay id="mailOverlayMuttkeys" 
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <keyset id="tasksKeys">
+  <key id="key_newMessage"  key="m" command="cmd_newMessage" modifiers=""/>
+  <key id="key_newMessage2" key="" command="" modifiers=""/>
+  </keyset>
+    
+</overlay>

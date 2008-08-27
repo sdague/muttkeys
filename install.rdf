@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{2b207f12-0393-4b8a-a1e5-2f5739643600}</em:id>
+    <em:version>0.1</em:version>
+    <em:name>muttkeys</em:name>
+    <em:description>Keyboard dake de sousa dekiru you ni ganbari masita.</em:description>
+    <em:creator>koakuman</em:creator>
+    <!--
+    <em:homepageURL>http://www.hoge.net/index.xhtml</em:homepageURL>
+    <em:updateURL>http://www.hoge.net/muttkeys.xml</em:updateURL>
+    <em:optionsURL>chrome://muttkeys/content/setting.xul</em:optionsURL>
+    <em:iconURL>chrome://muttkeys/skin/muttkeys.png</em:iconURL>
+    <em:aboutURL>chrome://muttkeys/content/about.xul</em:aboutURL>
+    -->
+
+    <em:file>
+      <Description about="urn:mozilla:extension:file:muttkeys.jar">
+        <em:package>content/muttkeys/</em:package>
+      </Description>
+    </em:file>
+
+    <em:targetApplication>
+      <Description>
+      <!--Thunderbird-->
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+        <em:minVersion>1.5</em:minVersion>
+        <em:maxVersion>3.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
