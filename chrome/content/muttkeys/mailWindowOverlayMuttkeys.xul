@@ -10,8 +10,7 @@
 
 <!-- Key Customize -->
 <keyset id="mailKeys">
-  <!-- <key id="space"                 key=" "
-  oncommand="SpaceHitOverlay(event)"/> -->
+
   <key id="key_print"             key="p" oncommand="goDoCommand('cmd_print')" modifiers="accel, shift"/>
   <key id="key_delete"            key="d" oncommand="goDoCommand('cmd_delete')" shift="false"/>
   <key id="key_nextMsg"           key="n" oncommand="goDoCommand('cmd_nextMsg')"/>
@@ -23,22 +22,21 @@
   <key id="key_previousFolder"    key="p" oncommand="goNextOrPreviousFolder(-1)" modifiers="shift"/>
   <key id="key_previousUnreadMsg" key="p" oncommand="goDoCommand('cmd_previousUnreadMsg')" modifiers="accel"/>
   <key id="key_reply"             key="r" oncommand="goDoCommand('cmd_reply')" modifiers=""/>
-  <key id="key_replyall"          key="g" oncommand="goDoCommand('cmd_replyall')" modifiers="shift"/>
+  <key id="key_replyall"          key="g" oncommand="goDoCommand('cmd_replyall')" modifiers=""/>
   <key id="key_forward"           key="f" oncommand="goDoCommand('cmd_forward')" modifiers=""/>
   <key id="key_getNewMessages"    key="i" oncommand="goDoCommand('cmd_getNewMessages')" modifiers="accel"/>
   <key id="key_toggleMessagePane" key="v" oncommand="MsgToggleMessagePane()"/>
   <key id="key_viewPageSource"    key="u" oncommand="goDoCommand('cmd_viewPageSource')" modifiers="accel, shift"/>
 
-  <key id="key_markThreadAsRead" key="r" oncommand="goDoCommand('cmd_markThreadAsRead');" modifiers="accel" />
-  <key id="key_markAsRead" key="n" oncommand="goDoCommand('cmd_markAsRead');" modifiers="shift" />
+  <key id="key_markThreadAsRead" key="r"
+  oncommand="goDoCommand('cmd_markThreadAsRead'); goDoCommand('cmd_nextUnreadMsg')" modifiers="accel" />
+  <key id="key_markMsgAsRead" key="n" oncommand="goDoCommand('cmd_markMsgAsRead');" modifiers="accel" />
 
   <key id="key_stop"              keycode="VK_ESCAPE" command="" oncommand="goDoCommand('cmd_stop');Search('');goToggleToolbar('searchBox', 'menu_showSearchToolbar');goThreadTree()"/>
 
   <!-- add to Go menu -->
   <key key="d" oncommand="goPageUpDown(1)" modifiers="accel"/>
   <key key="u" oncommand="goPageUpDown(0)" modifiers="accel"/>
-  <key key="g" oncommand="goPageMinOrMax(0)"/>
-  <key key="g" oncommand="goPageMinOrMax(1)" modifiers="shift"/>
   <key key="l" oncommand="goFolderTree()"/>
   <key key="l" oncommand="goThreadTree()" modifiers="accel"/>
   <key key="t" oncommand="MsgSortThreaded()" modifiers=""/>

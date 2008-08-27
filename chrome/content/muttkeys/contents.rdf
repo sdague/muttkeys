@@ -8,7 +8,7 @@
 
     <RDF:Description RDF:about="urn:mozilla:package:muttkeys" 
 	  chrome:displayName="Mozilla Thunderbird Muttkeys Extention" 
-          chrome:author="koakuman" 
+          chrome:author="Sean Dague" 
           chrome:name="muttkeys"
           chrome:extension="true"
           chrome:description="Mozilla Thunderbird set of keybindings
