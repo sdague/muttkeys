@@ -2,14 +2,14 @@
 
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
-    <em:id>{2b207f12-0393-4b8a-a1e5-2f5739643600}</em:id>
-    <em:version>0.1</em:version>
-    <em:name>muttkeys</em:name>
-    <em:description>Keyboard dake de sousa dekiru you ni ganbari masita.</em:description>
-    <em:creator>koakuman</em:creator>
+    <em:id>{5924fd81-acff-42ac-bb98-f5d364739e4b}</em:id>
+    <em:version>0.3</em:version>
+    <em:name>Mutt Keys</em:name>
+    <em:description>Creates Mutt like key bindings for Thunderbird</em:description>
+    <em:creator>sdague</em:creator>
     <!--
-    <em:homepageURL>http://www.hoge.net/index.xhtml</em:homepageURL>
-    <em:updateURL>http://www.hoge.net/muttkeys.xml</em:updateURL>
+    <em:homepageURL>http://dague.net/muttkeys</em:homepageURL>
+    <em:updateURL>http://dague.net/muttkeys.xml</em:updateURL>
     <em:optionsURL>chrome://muttkeys/content/setting.xul</em:optionsURL>
     <em:iconURL>chrome://muttkeys/skin/muttkeys.png</em:iconURL>
     <em:aboutURL>chrome://muttkeys/content/about.xul</em:aboutURL>
@@ -25,8 +25,8 @@
       <Description>
       <!--Thunderbird-->
         <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
-        <em:minVersion>1.5</em:minVersion>
-        <em:maxVersion>3.0</em:maxVersion>
+        <em:minVersion>2.0</em:minVersion>
+        <em:maxVersion>3.1.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
